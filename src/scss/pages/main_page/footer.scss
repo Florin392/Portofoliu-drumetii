@@ -1,0 +1,86 @@
+.container-footer {
+  background-color: $secondColor;
+  color: $primaryColor;
+  display: flex;
+
+  padding: 2em 5em 2em 5em;
+  font-size: 1em;
+  font-weight: bold;
+  @include mobile {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+  }
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+  width: 85%;
+
+  .logo-footer {
+    margin-left: 35vw;
+    @include mobile {
+      margin-left: 25vw;
+    }
+
+    a {
+      font-size: 4em;
+      color: $primaryColor;
+      text-align: center;
+      padding-top: 50%;
+    }
+
+  }
+
+}
+
+
+h2 {
+  font-size: 2em;
+  padding-bottom: .5em;
+}
+
+.footer-box {
+
+  ul {
+    li {
+      line-height: 1.2em;
+      text-align: left;
+      flex-grow: 1;
+      padding-left: .2em;
+    }
+
+    a {
+      letter-spacing: .5em;
+      padding-bottom: .5em;
+      color: $primaryColor;
+      text-decoration: none;
+      font-size: 2.5em;
+
+      &:hover {
+        &.fa-twitter-square {
+          color: blue;
+        }
+
+        &.fa-facebook-square {
+          color: dodgerblue;
+        }
+
+        &.fa-instagram-square {
+          color: deeppink;
+        }
+
+        &.fa-pinterest-square {
+          color: tomato;
+        }
+
+      }
+    }
+  }
+
+  @include mobile {
+    padding-bottom: 3em;
+  }
+}
+

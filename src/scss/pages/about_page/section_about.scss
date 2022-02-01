@@ -1,0 +1,94 @@
+.header-about {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../../../../assets/images/bk_about.JPG");
+  background-size: cover;
+
+  h1 {
+    margin-top: -3.3rem;
+    color: black;
+
+  }
+
+  @include mobile {
+    background-image: url("../../../../assets/images/bk_about_mobile.JPG");
+    background-size: cover;
+    background-position: -2rem center;
+    h1 {
+      margin-top: -11rem;
+      color: $primaryColor;
+    }
+  }
+}
+
+.about-box {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+
+  span {
+    padding: 2rem 0;
+    font-size: 5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+
+  }
+  h4 {
+  border-bottom: .2rem solid green;
+    width: 15%;
+    text-align: center;
+    margin-left: 42%;
+    @include mobile {
+      width: 20%;
+      margin-left: 40%;
+    }
+  }
+
+  .continut {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    text-align: left;
+    padding: 5rem 10rem 5rem 10rem;
+    @include mobile {
+      flex-direction: column;
+      padding: 1rem 0;
+    }
+    //border: 1px solid red;
+
+    .img_about {
+      width: 50%;
+      @include mobile {
+        width: 100%;
+      }
+      img {
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+        width: 100%;
+
+
+      }
+    }
+
+    .text_about {
+      width: 50%;
+      padding: 2rem;
+      font-size: 2rem;
+      font-weight: lighter;
+      letter-spacing: .02rem;
+      line-height: 2.5rem;
+      @include mobile {
+        padding: .7rem ;
+        width: 100%;
+        text-align: center;
+      }
+      p {
+        padding-bottom: 1rem;
+      }
+
+
+    }
+  }
+}

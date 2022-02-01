@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  height: 100vh;
+  width: 100%;
+  background-image: url("../../../../assets/images/bk1.JPG");
+  background-size: cover;
+
+  @include mobile {
+    background-image: url("../../../../assets/images/bkmobile.jpg");
+  }
+}
+
+.container-header {
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 2.5rem 0 2.5rem;
+  @include mobile {
+    padding: .7em 1em 0 1em;
+  }
+
+  a {
+    color: $primaryColor;
+    font-size: 1.5em;
+    @include mobile {
+      font-size: 1em;
+    }
+  }
+}
+
+.main-text {
+  text-align: center;
+  padding-top: 19%;
+  font-size: 4rem;
+  font-family: $baseFont;
+  color: $primaryColor;
+
+  font-weight: bold;
+  text-transform: uppercase;
+  @include mobile {
+    padding-top: 27vh;
+    font-size: 2.5rem;
+  }
+}
+
+
+
+

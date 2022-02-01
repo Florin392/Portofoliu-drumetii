@@ -1,0 +1,112 @@
+.header-trasee {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../../../../assets/images/bktrasee.JPG");
+  background-size: cover;
+  h1 {
+    margin-top: -3.3rem;
+  }
+  @include mobile {
+    background-image: url("../../../../assets/images/bktraseemobile.JPG");
+    background-size: cover;
+    background-position: center;
+    h1 {
+      margin-top: 2.2rem;
+    }
+  }
+}
+
+
+
+.titlu-munti {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+  .page-trasee {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 2rem;
+    margin-top: 2rem;
+    background-color: green;
+    width: 100%;
+    @include  mobile {
+      font-size: 2.6rem;
+    }
+  }
+
+  .muntii {
+    margin: 0 1rem 0 1rem;
+    background-size: cover;
+  }
+
+  .trasee {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10rem 0 10rem;
+  @include mobile {
+    padding: 0.5rem 3rem 0 3rem;
+  }
+    h2 {
+      font-size: 3rem;
+      text-transform: capitalize;
+      padding: 2rem 0;
+      //background-color: red;
+      @include mobile {
+        font-size: 2.5rem;
+        font-weight: bold;
+        background-color: #6b5656;
+      }
+    }
+
+    .descriere-traseu {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      padding-bottom: 5rem;
+      @include mobile {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 2rem;
+      }
+      //border: 1px salmon solid;
+      //background-color: red;
+
+
+      .descriere-munti {
+        //background-color: red;
+        //border: 1px blue solid;
+        padding: .5rem;
+
+        img {
+          width: 35rem;
+          height: 40rem;
+          background-size: contain;
+
+
+        }
+
+        h3 {
+          padding: 1rem 0 0 .5rem;
+          font-size: 2rem;
+          text-transform: capitalize;
+          text-align: start;
+          @include mobile {
+            padding: .8rem 0 1rem 0 ;
+            text-align: center;
+            font-size: 1.3rem;
+            font-weight: bold;
+            letter-spacing: .01rem;
+          }
+        }
+      }
+
+
+    }
+  }
+}
+
